@@ -19,4 +19,18 @@
         }
 
     }
+
+    $prodotti = [
+        new Prodotto("Cibo", "Cane", 10.50),
+        new Prodotto("Lettiera", "Gatto", 8.90),
+        new Prodotto("Cuccia", "Cane", 20)
+    ];
+
+    echo "<div class='cards'>";
+
+    foreach($prodotti as $prodotto) {
+        echo $prodotto -> getProduct();
+    }
+
+    echo "</div>";
 ?>
